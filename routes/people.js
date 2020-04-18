@@ -4,6 +4,7 @@ const router = express.Router();
 const firebase = require("../firebaseDB");
 const db = firebase.firestore();
 
+
 const {getSize} = require("../functions/getSize");
 const {getAll} = require("../functions/getAll");
 const {getByID} = require("../functions/getByID");
@@ -17,7 +18,6 @@ router.get('/', (req, res) => {
 router.get('/:id', (req, res) => {
     getByID("People",res,req.params.id.toString());
 });
-
 
 
 router.post("/",async (req,res)=>{

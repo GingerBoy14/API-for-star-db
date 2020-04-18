@@ -1,14 +1,14 @@
 const firebase = require('firebase');
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAqcCag3cj7Io4N9umH77Z98QLL1lp25Mw",
-    authDomain: "learnapi-e9739.firebaseapp.com",
-    databaseURL: "https://learnapi-e9739.firebaseio.com",
-    projectId: "learnapi-e9739",
-    storageBucket: "learnapi-e9739.appspot.com",
-    messagingSenderId: "528640269686",
-    appId: "1:528640269686:web:b6dd512f1251c6d13b2e57",
-    measurementId: "G-E6HCF7QSD3"
+    apiKey: process.env.DATABASE_API_KEY,
+    authDomain: process.env.DATABASE_AUTH_DOMAIN,
+    databaseURL: process.env.DATABASE_URL,
+    projectId: process.env.DATABASE_PROJECT_ID,
+    storageBucket: process.env.DATABASE_STORAGE_BUCKET,
+    messagingSenderId: process.env.DATABASE_MESSAGING_SENDER_ID,
+    appId: process.env.DATABASE_APP_ID,
+    measurementId: process.env.DATABASE_MESSAGING_ID
 };
 
 
